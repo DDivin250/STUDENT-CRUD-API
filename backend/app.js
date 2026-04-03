@@ -2,6 +2,9 @@ const express = require('express');
 const db = require('./config/db');
 const app = express();
 const port = 4000;
+const cors = require('cors');
+
+app.use(cors());
 
 app.use(express.json());
 
